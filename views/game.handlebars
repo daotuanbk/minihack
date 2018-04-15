@@ -1,0 +1,70 @@
+<table id="table" class="table" border="0" cellspacing="0" cellpadding="5">
+  <tr class="playerName">
+    <td class="player_name"></td>
+    <td class="player_name">Shounen A</td>
+    <td class="player_name">Shounen B</td>
+    <td class="player_name">Shounen C</td>
+    <td class="player_name">Shounen D</td>
+  </tr>
+  <tr class="sum">
+    <td class="sum_score">Sum of Score</td>
+    <td class="sum_score">1</td>
+    <td class="sum_score">2</td>
+    <td class="sum_score">3</td>
+    <td class="sum_score">4</td>
+  </tr>
+  <tr class="score">
+    <td>Round 1</td>
+    <td>
+      <textarea class="player_score" cols="7" rows="1" maxlength="5"></textarea>
+    </td>
+    <td>
+      <textarea class="player_score" cols="7" rows="1" maxlength="5"></textarea>
+    </td>
+    <td>
+      <textarea class="player_score" cols="7" rows="1" maxlength="5"></textarea>
+    </td>
+    <td>
+      <textarea class="player_score" cols="7" rows="1" maxlength="5"></textarea>
+    </td>
+  </tr>
+  <div class="add"></div>
+</table>
+
+<button class="button_glow add_round" id="add_round">ADD ROUND</button>
+
+<script>
+
+  $(document).ready(function () {
+    let roundId = 2;
+
+
+
+
+    $("#add_round").click(function () {
+      if (roundId % 2 == 0) {
+        let contentGray = `<tr class="score_gray">
+          <td>Round ${roundId}</td>
+          <td><textarea class="player_score"cols="7" rows="1" maxlength="5"></textarea></td>
+          <td><textarea class="player_score" cols="7" rows="1" maxlength="5"></textarea></td>
+          <td><textarea class="player_score" cols="7" rows="1" maxlength="5"></textarea></td>
+          <td><textarea class="player_score"cols="7" rows="1" maxlength="5"></textarea></td>
+      </tr>`;
+        $('table').append(contentGray);
+      }
+      else {
+
+        let contentWhite = `<tr class="score_white">
+          <td>Round ${roundId}</td>
+          <td><textarea class="player_score"cols="7" rows="1" maxlength="5"></textarea></td>
+          <td><textarea class="player_score" cols="7" rows="1" maxlength="5"></textarea></td>
+          <td><textarea class="player_score" cols="7" rows="1" maxlength="5"></textarea></td>
+          <td><textarea class="player_score"cols="7" rows="1" maxlength="5"></textarea></td>
+      </tr>`;
+        $('table').append(contentWhite);
+      }
+      roundId++;
+      console.log(roundId);
+    })
+  })
+</script>

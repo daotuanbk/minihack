@@ -1,0 +1,75 @@
+.text_area {
+  resize: none;
+  font-family: sans-serif;
+  border: solid 1px #BF1363;
+  border-radius: 7px;
+  margin: 0 auto;
+  padding: 5px;
+
+}
+
+.main_title {
+  border-bottom: 2px solid #333333;
+  margin-bottom: 40px;
+  margin-top: 60px;
+  font-weight: bolder;
+}
+
+.button_glow {
+  margin: 0 auto;
+  background: #BF1363;
+  color: #ffffff;
+  border: 0 none;
+  outline: 0 none;
+  border-radius: 7px;
+  padding: 7px 10px;
+  transition: all 0.15s ease-in-out;
+}
+
+.button_glow:hover {
+  background: #333333;
+  box-shadow: 0 0 5px #333333;
+}
+
+.button_glow:active {
+  box-shadow: 0 0 0 transparent;
+  transition: none;
+}
+
+.button {
+  display: flex;
+}
+
+.player_name {
+  background-color :#BF1363;
+  padding: 5px 15px;
+  margin-right: 80px;
+  font-weight: bold
+}
+
+.playerName {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sum {
+  display: flex;
+  justify-content: flex-start;
+  background-color :#BF1363;
+  color: white;
+  font-weight: bold;
+}
+
+.sum_score {
+  padding: 5px 15px;
+  margin-right: 160px;
+}
+
+.sum_of_score {
+  padding: 5px 15px;
+  margin-right: 160px;
+}
+
+table {
+  
+}
